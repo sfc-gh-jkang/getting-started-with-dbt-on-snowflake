@@ -1,3 +1,7 @@
+{{ config(
+    materialized="view",
+) }}
+
 SELECT 
     cl.customer_id,
     cl.city,

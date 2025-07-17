@@ -10,12 +10,24 @@ CREATE OR REPLACE WAREHOUSE tasty_bytes_dbt_wh
 
 USE WAREHOUSE tasty_bytes_dbt_wh;
 
+CREATE DATABASE IF NOT EXISTS tasty_bytes_dbt_db_dev;
+CREATE DATABASE IF NOT EXISTS tasty_bytes_dbt_db_prod;
+
 CREATE DATABASE IF NOT EXISTS tasty_bytes_dbt_db;
-CREATE OR REPLACE SCHEMA tasty_bytes_dbt_db.raw;
+CREATE OR REPLACE SCHEMA tasty_bytes_dbt_db_dev.raw;
+CREATE OR REPLACE SCHEMA tasty_bytes_dbt_db_dev.staging;
+CREATE OR REPLACE SCHEMA tasty_bytes_dbt_db_dev.marts;
+CREATE OR REPLACE SCHEMA tasty_bytes_dbt_db_prod.raw;
+CREATE OR REPLACE SCHEMA tasty_bytes_dbt_db_prod.staging;
+CREATE OR REPLACE SCHEMA tasty_bytes_dbt_db_prod.marts;
 CREATE OR REPLACE SCHEMA tasty_bytes_dbt_db.dev;
 CREATE OR REPLACE SCHEMA tasty_bytes_dbt_db.prod;
-
-
+ALTER SCHEMA tasty_bytes_dbt_db_dev.raw SET LOG_LEVEL = 'INFO';
+ALTER SCHEMA tasty_bytes_dbt_db_dev.raw SET TRACE_LEVEL = 'ALWAYS';
+ALTER SCHEMA tasty_bytes_dbt_db_dev.raw SET METRIC_LEVEL = 'ALL';
+ALTER SCHEMA tasty_bytes_dbt_db_prod.raw SET LOG_LEVEL = 'INFO';
+ALTER SCHEMA tasty_bytes_dbt_db_prod.raw SET TRACE_LEVEL = 'ALWAYS';
+ALTER SCHEMA tasty_bytes_dbt_db_prod.raw SET METRIC_LEVEL = 'ALL';
 ALTER SCHEMA tasty_bytes_dbt_db.dev SET LOG_LEVEL = 'INFO';
 ALTER SCHEMA tasty_bytes_dbt_db.dev SET TRACE_LEVEL = 'ALWAYS';
 ALTER SCHEMA tasty_bytes_dbt_db.dev SET METRIC_LEVEL = 'ALL';

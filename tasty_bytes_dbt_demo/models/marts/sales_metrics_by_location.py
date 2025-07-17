@@ -6,6 +6,10 @@ def model(dbt, session):
     It joins location data with trucks and aggregates metrics by location.
     Uses raw_pos models as sources instead of tb_101 directly.
     """
+    # TODO: Change to a view
+    dbt.config(
+        materialized="table"
+    )
     # Get tables using dbt's ref function to reference the raw_pos models
     locations_df = dbt.ref('raw_pos_location')
     trucks_df = dbt.ref('raw_pos_truck')
