@@ -3,19 +3,63 @@ tasty_bytes:
   outputs:
     dev:
       type: snowflake
-      account: 'not needed'
-      user: 'not needed'
+      account: SFSENORTHAMERICA-JKANG_AWS_US_EAST_1_1
+      user: jkang
       role: accountadmin
-      # database: tasty_bytes_dbt_db
       database: tasty_bytes_dbt_db_dev
       schema: raw
       warehouse: tasty_bytes_dbt_wh
+      # optional
+      connect_retries: 0 # default 0
+      connect_timeout: 10 # default: 10
+      retry_on_database_errors: True # default: true
+      retry_all: False  # default: false
+      reuse_connections: True # default: True if client_session_keep_alive is False, otherwise None
+    dev_local:
+      type: snowflake
+      account: SFSENORTHAMERICA-JKANG_AWS_US_EAST_1_1
+      user: jkang
+      role: accountadmin
+      database: tasty_bytes_dbt_db_dev
+      schema: raw
+      warehouse: tasty_bytes_dbt_wh
+      # SSO COnfig
+      authenticator: externalbrowser
+      # optional
+      connect_retries: 0 # default 0
+      connect_timeout: 10 # default: 10
+      retry_on_database_errors: True # default: true
+      retry_all: False  # default: false
+      reuse_connections: True # default: True if client_session_keep_alive is False, otherwise None
+
     prod:
       type: snowflake
-      account: 'not needed'
-      user: 'not needed'
+      account: SFSENORTHAMERICA-JKANG_AWS_US_EAST_1_1
+      user: jkang
       role: accountadmin
-      # database: tasty_bytes_dbt_db
       database: tasty_bytes_dbt_db_prod
       schema: raw
       warehouse: tasty_bytes_dbt_wh
+      # optional
+      connect_retries: 0 # default 0
+      connect_timeout: 10 # default: 10
+      retry_on_database_errors: True # default: true
+      retry_all: False  # default: false
+      reuse_connections: True # default: True if client_session_keep_alive is False, otherwise None
+    prod_local:
+      type: snowflake
+      account: SFSENORTHAMERICA-JKANG_AWS_US_EAST_1_1
+      user: jkang
+      role: accountadmin
+      database: tasty_bytes_dbt_db_prod
+      schema: raw
+      warehouse: tasty_bytes_dbt_wh
+      # SSO COnfig
+      authenticator: externalbrowser
+      # optional
+      connect_retries: 0 # default 0
+      connect_timeout: 10 # default: 10
+      retry_on_database_errors: True # default: true
+      retry_all: False  # default: false
+      reuse_connections: True # default: True if client_session_keep_alive is False, otherwise None
+      
