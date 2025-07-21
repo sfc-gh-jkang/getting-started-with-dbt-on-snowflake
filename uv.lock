@@ -246,7 +246,7 @@ wheels = [
 
 [[package]]
 name = "dbt-core"
-version = "1.10.4"
+version = "1.9.4"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "agate" },
@@ -255,16 +255,13 @@ dependencies = [
     { name = "dbt-adapters" },
     { name = "dbt-common" },
     { name = "dbt-extractor" },
-    { name = "dbt-protos" },
     { name = "dbt-semantic-interfaces" },
     { name = "jinja2" },
-    { name = "jsonschema" },
     { name = "mashumaro", extra = ["msgpack"] },
     { name = "networkx" },
     { name = "packaging" },
     { name = "pathspec" },
     { name = "protobuf" },
-    { name = "pydantic" },
     { name = "pytz" },
     { name = "pyyaml" },
     { name = "requests" },
@@ -272,9 +269,9 @@ dependencies = [
     { name = "sqlparse" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/d4/5a/d1912f088180edc32a4a52dd30d8be81e0187d6b2bfe073cf5ba11d4a678/dbt_core-1.10.4.tar.gz", hash = "sha256:45497e813b6e19e0db97df5cc720cb606ce50489d4825e1d091fc04fa408a283", size = 894213, upload-time = "2025-07-10T20:42:28.99Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/84/23/4950bc072a95d14ec8fe454017951b0884484884c03e59f7cd8c434c91ad/dbt_core-1.9.4.tar.gz", hash = "sha256:783dde19c4e8a22e82ec927963779a9cc5249d746b9e3beb8ec10adc5cabd6db", size = 867021, upload-time = "2025-04-02T16:55:37.02Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/f8/28/f314f540ecaae8c2f9cf861a6349709e98f338d86d07b32a5a713d10d054/dbt_core-1.10.4-py3-none-any.whl", hash = "sha256:461bbd98c77e4ce7ae3f54c8a84aba620516c558deb8ecdc1b2552c3232cca24", size = 979456, upload-time = "2025-07-10T20:42:27.175Z" },
+    { url = "https://files.pythonhosted.org/packages/23/c3/10f0a021139929d48f371cdbadab0cdcd3fc558c63fc75b51d9e99e0026b/dbt_core-1.9.4-py3-none-any.whl", hash = "sha256:9af5e426a3d574b0c912e64f998f0d96d9ddddb768365c7fb4f6d12893210620", size = 946067, upload-time = "2025-04-02T16:55:34.806Z" },
 ]
 
 [[package]]
@@ -314,7 +311,7 @@ wheels = [
 
 [[package]]
 name = "dbt-semantic-interfaces"
-version = "0.9.0"
+version = "0.7.5"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "click" },
@@ -327,26 +324,25 @@ dependencies = [
     { name = "pyyaml" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/b0/91/c702d8fb143541fda10f5eb7a7a89f34bda38ee043ecb3e3653363d0c5a0/dbt_semantic_interfaces-0.9.0.tar.gz", hash = "sha256:5c921257dce8bb51c9ffb5479f2bdd959e16ebfb98ee833de6daa70788c47271", size = 93865, upload-time = "2025-07-09T20:06:30.454Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/ab/5e/b88f13d96f8da9704e11f29a63b74f0161cdefd85b0a893467e854030b43/dbt_semantic_interfaces-0.7.5.tar.gz", hash = "sha256:8857f1833bffe5194f9d676ae2dc8cbcc45e8af4152187e351f68377708c39bb", size = 96448, upload-time = "2025-07-02T19:03:27.799Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/b3/82/41708b2b69d5fead88dea5ca0d863d6291da83ca6f1bd19246842d397e2b/dbt_semantic_interfaces-0.9.0-py3-none-any.whl", hash = "sha256:1b54c06ba89190a47a7f0563360930a0cce869e55b484ca09d261ade0e319155", size = 147008, upload-time = "2025-07-09T20:06:32.466Z" },
+    { url = "https://files.pythonhosted.org/packages/f6/94/c5d2469ff30897fac307d1f8b69dfb0121f46311dc11a4a07fda210861b4/dbt_semantic_interfaces-0.7.5-py3-none-any.whl", hash = "sha256:36315cfa6175da86904c86414948516bda3cf595bf9edd18e156437a2c5f6619", size = 141984, upload-time = "2025-07-02T19:03:28.975Z" },
 ]
 
 [[package]]
 name = "dbt-snowflake"
-version = "1.10.0"
+version = "1.9.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "agate" },
-    { name = "certifi" },
     { name = "dbt-adapters" },
     { name = "dbt-common" },
     { name = "dbt-core" },
     { name = "snowflake-connector-python", extra = ["secure-local-storage"] },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/f3/a9/cc2cc0740f887aaa487fb7f412aabff24dd46bd5908c42771492c8611ed1/dbt_snowflake-1.10.0.tar.gz", hash = "sha256:6391fb0139bc6e7b65e18685e65f436624611eddaadbf5da202a7e3d1f72c08c", size = 108772, upload-time = "2025-07-10T18:59:52.439Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/22/7f/f0589e88d04baa80bb5af84420fc319ddcf72cb9adf2e0a153825771f3e9/dbt_snowflake-1.9.2.tar.gz", hash = "sha256:4aec61a236a32b27eec6424700327820c9d1f34cd192308ad57d23e679012160", size = 41673, upload-time = "2025-03-07T17:45:13.965Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/50/78/797c24cb90683983ba52d91ca10cb0a9fcdee7ce0e1beafffd5a494a5421/dbt_snowflake-1.10.0-py3-none-any.whl", hash = "sha256:faa2eaa0155d2d104f058524886064c2a4d3dafdd876dc41471b8ab4119b172b", size = 66856, upload-time = "2025-07-10T18:59:50.867Z" },
+    { url = "https://files.pythonhosted.org/packages/f5/e0/52bfd6ef22802facd05f8ec1c80a095ae4a900bd897240412ac364493d59/dbt_snowflake-1.9.2-py3-none-any.whl", hash = "sha256:b19a4fa065d4b765e7e24491aad7e9b908dce7b91631895f5341574f87d2a5df", size = 63150, upload-time = "2025-03-07T17:45:12.103Z" },
 ]
 
 [[package]]
@@ -381,8 +377,8 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "dbt-core", specifier = ">=1.10.4" },
-    { name = "dbt-snowflake", specifier = ">=1.10.0" },
+    { name = "dbt-core", specifier = "==1.9.4" },
+    { name = "dbt-snowflake", specifier = "==1.9.2" },
 ]
 
 [[package]]
