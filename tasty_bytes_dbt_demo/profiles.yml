@@ -23,8 +23,8 @@ tasty_bytes:
       database: tasty_bytes_dbt_db_dev
       schema: raw
       warehouse: tasty_bytes_dbt_wh
-      # SSO COnfig
-      authenticator: externalbrowser
+      # Authentication
+      private_key_path: /Users/jkang/Documents/keypair/rsa_key.p8
       # optional
       connect_retries: 0 # default 0
       connect_timeout: 10 # default: 10
@@ -54,8 +54,8 @@ tasty_bytes:
       database: tasty_bytes_dbt_db_prod
       schema: raw
       warehouse: tasty_bytes_dbt_wh
-      # SSO COnfig
-      authenticator: externalbrowser
+      # Authentication
+      private_key_path: /Users/jkang/Documents/keypair/rsa_key.p8
       # optional
       connect_retries: 0 # default 0
       connect_timeout: 10 # default: 10
