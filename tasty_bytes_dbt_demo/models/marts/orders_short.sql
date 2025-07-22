@@ -9,7 +9,7 @@ SELECT
     t.primary_city,
     t.region,
     t.country,
-    -- t.franchise_flag,
+    t.franchise_flag,
     -- t.franchise_id,
     f.first_name AS franchisee_first_name,
     f.last_name AS franchisee_last_name,
