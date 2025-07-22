@@ -2,7 +2,10 @@ version: 2
 
 models:
     - name: orders_short
+      description: Shortened version of the orders table
       columns:
+        - name: children_count
+          description: Number of children
         - name: quantity
           description: Order quantity
           data_tests:

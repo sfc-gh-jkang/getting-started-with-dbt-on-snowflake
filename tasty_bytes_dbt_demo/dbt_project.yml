@@ -1,4 +1,7 @@
 ## Project
+# REQUIRED file
+# Contains information that tells dbt how to operate
+# Your project
 name: tasty_bytes
 version: "1.0"
 config-version: 2
@@ -20,6 +23,7 @@ clean-targets: [target, dbt_modules]
 models:
   tasty_bytes:
     staging:
+    # '+' indicates a configuration
       +materialized: view
       +schema: staging
     marts:
