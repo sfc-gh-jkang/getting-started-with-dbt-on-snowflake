@@ -20,6 +20,7 @@ target-path: target
 clean-targets: [target, dbt_modules]
 
 ## Models
+# IMPORTANT - Need to define materializations and schemas
 models:
   tasty_bytes:
     staging:
