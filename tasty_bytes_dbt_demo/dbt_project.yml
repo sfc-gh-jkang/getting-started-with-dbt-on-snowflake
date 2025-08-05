@@ -23,6 +23,9 @@ clean-targets: [target, dbt_modules]
 # IMPORTANT - Need to define materializations and schemas
 models:
   tasty_bytes:
+    +persist_docs:
+        relation: true
+        columns: true
     staging:
     # '+' indicates a configuration
       +materialized: view
