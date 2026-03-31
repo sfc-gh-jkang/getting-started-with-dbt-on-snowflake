@@ -26,3 +26,10 @@ https://docs.getdbt.com/docs/build/jinja-macros
 
 ## Run dbt commands
 - Remember that any dbt command needs to be ended with `--target dev_local` for the right target from profiles.yml
+
+## Repository Owner
+
+- **Owner:** John Kang (john.kang@snowflake.com / [@sfc-gh-jkang](https://github.com/sfc-gh-jkang))
+- **Access requests:** Open a [CASEC Jira](https://snowflakecomputing.atlassian.net/) for access changes
+- **License:** Apache-2.0
+
